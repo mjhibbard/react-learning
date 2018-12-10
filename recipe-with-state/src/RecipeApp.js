@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Recipe from './Recipe';
-import Navbar from './Navbar';
-import RecipeList from './RecipeList';
-import './RecipeApp.css';
+import React, { Component } from "react";
+import Recipe from "./Recipe";
+import Navbar from "./Navbar";
+import RecipeList from "./RecipeList";
+import "./RecipeApp.css";
 
 class RecipeApp extends Component {
   render() {
