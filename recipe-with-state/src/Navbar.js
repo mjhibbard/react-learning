@@ -8,16 +8,16 @@ class Navbar extends Component {
         <h2>Recipe App</h2>
         <nav>
           <li>
-            <a>New Recipe</a>
+            <a href="#">New Recipe</a>
           </li>
           <li>
-            <a>Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
-            <a>About</a>
+            <a href="#">About</a>
           </li>
           <li>
-            <a>Contact Us</a>
+            <a href="#">Contact Us</a>
           </li>
         </nav>
       </header>
