@@ -4,13 +4,14 @@ import Recipe from "./Recipe";
 import "./RecipeList.css";
 
 class RecipeList extends Component {
-
   static propTypes = {
-    recipes: PropTypes.arrayOf(PropTypes.object)
+    recipes: PropTypes.arrayOf(PropTypes.object),
+    onDelete: PropTypes.func.isRequired
   };
   render() {
-    const recipes = this.props.recipes.map((r, index) => (
-      <Recipe key={index} {...r} />
+    const {onDelete} = this.props;
+    const recipes = this.props.recipes.map((r, id) => (
+      <Recipe key={r.id} {...r} onDelete={onDelete} />
     ));
 
     return <div className="recipe-list">{recipes}</div>;
